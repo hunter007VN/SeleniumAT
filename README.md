@@ -1,4 +1,3 @@
-CCiAuto_framework
+Auto_framework
 =================
-xxx
-CCiAuto Framework
+Auto Framework
