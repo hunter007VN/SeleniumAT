@@ -1,3 +1,3 @@
-Auto_framework
+SeleniumAT
 =================
 Auto Framework
