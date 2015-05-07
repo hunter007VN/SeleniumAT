@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!-- see http://www.phpunit.de/wiki/Documentation -->
+<!--//<phpunit bootstrap="/path/to/bootstrap.php"-->
+<phpunit colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false">
+    <!-- SingleBrowser -->
+    <php>
+        <const name="TEST_BROWSER" value="*firefox"/> 
+        <const name="TEST_URL" value="http://sm3seagate-testhost.tk/index.html"/>
+        <const name="TEST_URL_SM4" value="http://smproc4-testhost.tk/"/>
+        <const name="TEST_SCREENSHOT_PATH" value="C:\xampp\htdocs\screenshots"/>
+        <const name="TEST_SCREENSHOT_URL" value="http://localhost/screenshots"/>
+        <const name="TEST_EXCEL_FILE_PATH1" value="C:\xampp\htdocs\Sm3SeagateAutoTest\test\data\Datafile.xlsx"/>
+        <const name="TEST_EXCEL_FILE_PATH2" value="G:\1.Projects\sm3stx.greystonevn.com\Sm3seagate\Requirement\bk\UploadWipOrderTemplate.xlsx"/>
+        <const name="TEST_EXCEL_FILE_PATH3" value="/media/luunguyen/DATA/1.Projects/SMPROC4/Requirement/FullFillFormRequestTest.xlsx"/>
+        <const name="TEST_EXCEL_FILE_PATH4" value="G:\1.Projects\SMPROC4\Requirement\newUserTest.xlsx"/>
+        <const name="TEST_EXCEL_FILE_PATH5" value="G:\1.Projects\SMPROC4\Requirement\newUserRoleTest.xlsx"/>
+        <const name="TEST_EXCEL_FILE_PATH6" value="G:\1.Projects\SMPROC4\Requirement\newOrderTest.xlsx"/>
+        
+        <const name="TEST_DB_DSN" value="mysql:dbname=sm3seagate;host=172.16.4.81"/>
+        <const name="TEST_DB_USER" value="stdev"/>
+        <const name="TEST_DB_PASSWORD" value="stdev"/>
+    </php>
+    <!-- SingleBrowser --> 
+
+    <!-- MultiBrowser -->
+    <!-- <selenium>
+            <browser name="Firefox on windows"
+                  browser = '*firefox'
+                  platform = 'WINDOWS'
+                   host="localhost"
+                   port="4444"
+                  timeout = '30000' />
+            <browser name='IE on Windows'
+                  browser = '*iexplore'
+                  platform = 'WINDOWS'
+                   host="localhost"
+                   port="4444"
+                  timeout ='30000' />
+    </selenium> -->
+    <!-- MultiBrowser -->
+
+    <testsuite name="Main Test Suite">
+        <file>TestSuite.php</file>
+    </testsuite>
+    
+    <listeners>
+        <listener class="TestListener" file="lib/TestListener.php"/>
+    </listeners>
+    <logging>
+        <log type="testdox-html" target="./log/testdox.html" />
+    </logging>
+</phpunit>
