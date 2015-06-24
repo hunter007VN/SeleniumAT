@@ -14,8 +14,8 @@ and open the template in the editor.
     <!-- SingleBrowser -->
     <php>
         <const name="TEST_BROWSER" value="*firefox"/> 
-        <const name="TEST_URL" value="http://sm3seagate-testhost.tk/index.html"/>
-        <const name="TEST_URL_SM4" value="http://smproc4-testhost.tk/"/>
+        <const name="TEST_URL" value="https://cciha.ccinteg.com/index.html"/>
+        <const name="TEST_URL_SM4" value="https://cciha.ccinteg.com/"/>
         <const name="TEST_SCREENSHOT_PATH" value="C:\xampp\htdocs\screenshots"/>
         <const name="TEST_SCREENSHOT_URL" value="http://localhost/screenshots"/>
         <const name="TEST_EXCEL_FILE_PATH1" value="C:\xampp\htdocs\Sm3SeagateAutoTest\test\data\Datafile.xlsx"/>
